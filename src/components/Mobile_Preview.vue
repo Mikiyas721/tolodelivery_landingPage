@@ -32,7 +32,6 @@
 
     #container {
         background-color: #F2EFE8;
-
     }
 
     #left_of_app {

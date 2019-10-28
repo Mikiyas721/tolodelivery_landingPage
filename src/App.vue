@@ -28,7 +28,9 @@
 
             <Mobile_Preview></Mobile_Preview>
             <Notes></Notes>
-            <Swiper></Swiper>
+            <Swipe></Swipe>
+            <Last></Last>
+            <play></play>
 
 
         </v-content>
@@ -38,14 +40,18 @@
 <script>
     import Mobile_Preview from './components/Mobile_Preview';
     import Notes from './components/Notes';
-    import Swiper from './components/Swiper';
+    import Swipe from './components/Swipe';
+    import Last from './components/LastComponent';
+    import Play from './components/PlayStore';
 
     export default {
         name: 'App',
         components: {
             Mobile_Preview,
             Notes,
-            Swiper,
+            Swipe,
+            Last,
+            Play
         },
         data: () => ({
             notes: [

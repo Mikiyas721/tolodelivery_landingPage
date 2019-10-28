@@ -1,12 +1,12 @@
 <template>
     <v-app>
-        <div id="container">
+        <container id="container">
             <v-card class="first_card" flat v-for="note in notes">
                 <span class="title">{{note.title}}</span>
                 <br>
                 <p class="body">{{note.body}}</p>
             </v-card>
-        </div>
+        </container>
     </v-app>
 
 </template>
@@ -59,6 +59,7 @@
 
     #container {
         background-color: white;
+        margin: 0;
 
     }
 
