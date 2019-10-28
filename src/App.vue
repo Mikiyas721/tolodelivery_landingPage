@@ -1,36 +1,89 @@
 <template>
-  <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
+    <v-app>
+        <v-app-bar flat color="#F2EFE8">
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+            <v-toolbar-title>
+                <v-avatar class="ml-5">
+                    <img :src="require('../assets/tolo.png')" id="logo">
+                </v-avatar>
+
+                <span class="text_tolo">Tolo</span>
+                <span class="headset
+                     text_delivery">Delivery</span>
+
+            </v-toolbar-title>
+
+            <v-spacer></v-spacer>
+
+            <v-btn text class="download_button">
+                Download
+                <v-icon>
+                    file_download
+                </v-icon>
+            </v-btn>
+
+        </v-app-bar>
+
+        <v-content>
+
+            <Mobile_Preview></Mobile_Preview>
+            <Notes></Notes>
+            <Swiper></Swiper>
+
+
+        </v-content>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+    import Mobile_Preview from './components/Mobile_Preview';
+    import Notes from './components/Notes';
+    import Swiper from './components/Swiper';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
-};
+    export default {
+        name: 'App',
+        components: {
+            Mobile_Preview,
+            Notes,
+            Swiper,
+        },
+        data: () => ({
+            notes: [
+                {
+                    title: 'Register',
+                    body: 'If your a biker, you need to first come to our office and register. You need to come with a copy of your libray'
+                },
+
+            ]
+
+        }),
+    };
 </script>
+<style scoped>
+
+    .text_tolo {
+        color: #8EB4E3;
+        font-size: 30px;
+    }
+
+    .text_delivery {
+        color: #808000;
+        font-size: 30px;
+    }
+
+    #logo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+
+    #app_bar {
+        background-color: #F2EFE8;
+    }
+
+    .download_button {
+        background-color: #00806C;
+        color: white;
+        margin-right: 5%;
+    }
+</style>
