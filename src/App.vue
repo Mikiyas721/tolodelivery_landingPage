@@ -28,9 +28,11 @@
 
             <Mobile_Preview></Mobile_Preview>
             <Notes></Notes>
-            <Swipe></Swipe>
+            <Biker_Swipe></Biker_Swipe>
+            <Customer_Swipe></Customer_Swipe>
             <Last></Last>
             <play></play>
+
 
 
         </v-content>
@@ -40,16 +42,23 @@
 <script>
     import Mobile_Preview from './components/Mobile_Preview';
     import Notes from './components/Notes';
-    import Swipe from './components/Swipe';
+    import Biker_Swipe from './components/Biker_Swiper';
+    import Customer_Swipe from './components/Customer_Swipe';
     import Last from './components/LastComponent';
     import Play from './components/PlayStore';
+/*TODO Add a component about the telegram bot
+  TODO Replace the customer swiper images with a better one
+  TODO Add Animation effect on the swipers
+  TODO Finish the bottom part of the page as in the template and replace the duplicate notes
+  */
 
     export default {
         name: 'App',
         components: {
             Mobile_Preview,
             Notes,
-            Swipe,
+            Biker_Swipe,
+            Customer_Swipe,
             Last,
             Play
         },

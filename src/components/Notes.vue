@@ -20,19 +20,19 @@
             notes: [
                 {
                     title: 'Register',
-                    body: 'If your a biker, you need to first come to our office and register. You need to come with a copy of your libray'
+                    body: "If you're a biker, you need to first come to our office and register. Please come with a copy of your libray."
                 },
                 {
                     title: 'Call Service',
                     body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
                 },
                 {
-                    title: 'Call Service',
-                    body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
+                    title: 'Cost of Service',
+                    body: 'The cost of the service that you acquire through this system is calculated using a distance-based tariff. The tariff is an initial cost of 40 Ethiopian birr and 14 Ethiopian birr added for every kilometer.'
                 },
                 {
-                    title: 'Call Service',
-                    body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
+                    title: 'Order',
+                    body: "You can order a delivery or a transport via our Mobile App. We also have a telegram bot if you're a telegram user."
                 },
                 {
                     title: 'Call Service',

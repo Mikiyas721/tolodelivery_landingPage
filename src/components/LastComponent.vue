@@ -5,9 +5,9 @@
                 <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
             </div>
             <div id="rightSideNote">
-                <span id="noteHeader">Introducing Journeys - workouts programs based on common sports goals.</span>
+                <span id="noteHeader">Introducing a fast transportation and delivery System.</span>
                 <br>
-                <span id="smallHeaderNote">Focus your training regimen by starting a journey that changes your strength, speed and skill in sport. </span>
+                <span id="smallHeaderNote">Sit back and relax. Let us worry about the delivery</span>
 
                 <v-card class="first_card" flat v-for="note in notes">
                     <span class="title">{{note.title}}</span>
@@ -26,12 +26,12 @@
         data: () => ({
             notes: [
                 {
-                    title: 'Register',
-                    body: 'If your a biker, you need to first come to our office and register. You need to come with a copy of your libray'
+                    title: 'Aim',
+                    body: 'Tolo delivery aims to tackle the traffic jam problem in Addis Ababa by using Software that create the connection for bikers who deliver and transport.'
                 },
                 {
-                    title: 'Register',
-                    body: 'If your a biker, you need to first come to our office and register. You need to come with a copy of your libray'
+                    title: 'Goal',
+                    body: 'To be the first choice of delivery all over Addis Ababa.'
                 },
             ]
 
