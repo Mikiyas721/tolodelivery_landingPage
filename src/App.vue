@@ -4,7 +4,7 @@
 
             <v-toolbar-title>
                 <v-avatar class="ml-5">
-                    <img :src="require('../assets/tolo.png')" id="logo">
+                    <img :src="require('../assets/logo.jpg')" id="logo" class="mr-2">
                 </v-avatar>
 
                 <span class="text_tolo">Tolo</span>
@@ -78,8 +78,8 @@
     }
 
     #logo {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-bottom: 8px;
     }
 
