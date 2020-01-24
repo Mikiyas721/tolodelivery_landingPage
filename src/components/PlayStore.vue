@@ -4,10 +4,11 @@
 
             <div id="title">
                 <h1 class="ml-12 mt-10">Download it now.</h1>
-                <v-btn id="button" text>Play Store</v-btn>
+                <v-btn id="button" text>
+                    <v-icon class="mr-2">store</v-icon>
+                    App Store</v-btn>
             </div>
             <!--v-for work on slide?-->
-
         </container>
 
     </v-app>
@@ -28,12 +29,12 @@
 
     #container {
         background-color: #F2EFE8;
-        margin-bottom: 50px;
+       /* margin-bottom: 50px;*/
     }
 
     #button {
         background-color: #007D72;
         color: white;
-        margin: 20px 0 20px 13%;
+        margin: 20px 0 100px 13%;
     }
 </style>

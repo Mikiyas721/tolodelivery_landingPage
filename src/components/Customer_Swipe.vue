@@ -6,7 +6,7 @@
                 <h1 class="ml-12">Take a closer look</h1>
                 <h3>See how easily you can use our customer application</h3>
             </div>
- <!--v-for work on slide?-->
+            <!--v-for work on slide?-->
             <carousel>
                 <!--<slide class="image_Slide" v-for="url in image_url">
                     <v-img :src="require(url)" class="image"></v-img>
@@ -101,7 +101,7 @@
     }
 
     .image_Slide {
-        margin:20px 0px 0px 13%;
+        margin: 20px 0px 0px 13%;
 
     }
 </style>

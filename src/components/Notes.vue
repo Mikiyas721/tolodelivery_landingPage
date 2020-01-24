@@ -34,13 +34,13 @@
                     title: 'Order',
                     body: "You can order a delivery or a transport via our Mobile App. We also have a telegram bot if you're a telegram user."
                 },
-                {
+              /*  {
                     title: 'Call Service',
                     body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
                 },{
                     title: 'Call Service',
                     body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
-                },
+                },*/
 
             ]
 
@@ -60,7 +60,6 @@
     #container {
         background-color: white;
         margin: 0;
-
     }
 
     .title {
