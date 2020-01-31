@@ -1,60 +1,16 @@
 <template>
     <v-app>
         <container id="container">
-
             <div id="title">
                 <h1 class="ml-12">Take a closer look</h1>
                 <h3>See how easily you can use our customer application</h3>
             </div>
-            <!--v-for work on slide?-->
-            <carousel>
-                <!--<slide class="image_Slide" v-for="url in image_url">
-                    <v-img :src="require(url)" class="image"></v-img>
-                </slide>-->
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/1.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/2.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/3.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/4.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/5.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/6.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/7.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/8.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/9.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/10.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/11.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/12.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/13.jpg')" class="image"></v-img>
-                </slide>
-                <slide class="image_Slide">
-                    <v-img :src="require('../assets/customer_swiper/14.jpg')" class="image"></v-img>
-                </slide>
-
-            </carousel>
+            <v-carousel cycle="true" interval="2000" progress="true" show-arrows-on-hover="true" vertical="true">
+                <v-carousel-item
+                        v-for="(item,i) in image_url" :src="item.path" :key="i"
+                        style="width: 240px; height: auto; margin-left: 42%">
+                </v-carousel-item>
+            </v-carousel>
         </container>
 
     </v-app>
@@ -66,20 +22,20 @@
         name: "Swiper",
         data: () => ({
             image_url: [
-                "../assets/customer_swiper/1.jpg",
-                "../assets/customer_swiper/2.jpg",
-                "../assets/customer_swiper/3.jpg",
-                "../assets/customer_swiper/4.jpg",
-                "../assets/customer_swiper/5.jpg",
-                "../assets/customer_swiper/6.jpg",
-                "../assets/customer_swiper/7.jpg",
-                "../assets/customer_swiper/8.jpg",
-                "../assets/customer_swiper/9.jpg",
-                "../assets/customer_swiper/10.jpg",
-                "../assets/customer_swiper/11.jpg",
-                "../assets/customer_swiper/12.jpg",
-                "../assets/customer_swiper/13.jpg",
-                "../assets/customer_swiper/14.jpg",
+                {path: require('../assets/biker_swiper/1.jpg'),},
+                {path: require('../assets/biker_swiper/2.jpg'),},
+                {path: require('../assets/biker_swiper/3.jpg'),},
+                {path: require('../assets/biker_swiper/4.jpg'),},
+                {path: require('../assets/biker_swiper/5.jpg'),},
+                {path: require('../assets/biker_swiper/6.jpg'),},
+                {path: require('../assets/biker_swiper/7.jpg'),},
+                {path: require('../assets/biker_swiper/8.jpg'),},
+                {path: require('../assets/biker_swiper/9.jpg'),},
+                {path: require('../assets/customer_swiper/10.jpg')},
+                {path: require('../assets/customer_swiper/11.jpg')},
+                {path: require('../assets/customer_swiper/12.jpg')},
+                {path: require('../assets/customer_swiper/13.jpg')},
+                {path: require('../assets/customer_swiper/14.jpg')}
             ]
         })
     }
@@ -92,7 +48,7 @@
 
     #container {
         background-color: #F2EFE8;
-        margin-bottom: 50px;
+        margin: 0 10px 0 10px;
     }
 
     .image {
