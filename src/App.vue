@@ -24,16 +24,30 @@
 
         </v-app-bar>
 
-        <v-content>
-
+        <v-content style="background-color: blue">
             <Mobile_Preview></Mobile_Preview>
             <Notes></Notes>
-            <!--<Biker_Swipe></Biker_Swipe>-->
             <Customer_Swipe></Customer_Swipe>
             <Last></Last>
             <Play></Play>
-            <Bottom></Bottom>
 
+            <div id="bottom">
+                <div id="navigate">
+                    <p class="openSans">Navigate</p>
+                    <p v-for="navigate in navs" id="link" class="nunito">
+                        {{navigate.label}}
+                    </p>
+
+                </div>
+                <div id="contact">
+                    <p class="openSans">Contact</p>
+                    <p v-for="contact in contacts" class="nunito">
+                        <v-icon class="mr-3 white--text">{{contact.icon}}</v-icon>
+                        {{contact.data}}
+                    </p>
+
+                </div>
+            </div>
         </v-content>
     </v-app>
 </template>
@@ -41,27 +55,20 @@
 <script>
     import Mobile_Preview from './components/Mobile_Preview';
     import Notes from './components/Notes';
-    /*import Biker_Swipe from './components/Biker_Swiper';*/
     import Customer_Swipe from './components/Customer_Swipe';
-    import Last from './components/LastComponent';
+    import Last from './components/ToloDetails';
     import Play from './components/PlayStore';
-    import Bottom from './components/Bottom';
 
-    /*TODO Add a component about the telegram bot
-      TODO Add Animation effect on the swipers
-      TODO Finish the bottom part of the page as in the template and replace the duplicate notes
-      */
+    //TODO Add a component about the telegram bot
 
     export default {
         name: 'App',
         components: {
             Mobile_Preview,
             Notes,
-            /*Biker_Swipe,*/
             Customer_Swipe,
             Last,
             Play,
-            Bottom,
         },
         data: () => ({
             notes: [
@@ -70,8 +77,32 @@
                     body: 'If your a biker, you need to first come to our office and register. You need to come with a copy of your libray'
                 },
 
-            ]
+            ],
+            contacts: [
+                {
+                    icon: 'email',
+                    data: 'Mikiyas721@gmail.com'
+                },
+                {
+                    icon: 'phone',
+                    data: '0114121215'
+                },
+                {
+                    icon: 'location_on',
+                    data: 'Addis Ababa, Ethiopia'
+                },
+            ],
+            navs: [
+                {
+                    link: '',
+                    label: 'privacy policy'
+                },
+                {
+                    link: '',
+                    label: 'Terms of Service'
+                }
 
+            ],
         }),
     };
 </script>
@@ -105,5 +136,39 @@
 
     .ubuntu {
         font-family: 'Ubuntu', sans-serif;
+    }
+
+    #bottom {
+        background-color: #303030;
+        height: 400px;
+        float: bottom;
+    }
+
+    #contact {
+
+        width: auto;
+        margin: 50px;
+        float: left;
+        color: white;
+    }
+
+    #navigate {
+        width: auto;
+        margin: 50px;
+        float: left;
+        color: white;
+    }
+
+    .openSans {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;;
+    }
+
+    #link {
+        color: grey;
+        font-size: 14px;
     }
 </style>

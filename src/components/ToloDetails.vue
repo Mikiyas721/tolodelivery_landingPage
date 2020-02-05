@@ -1,21 +1,21 @@
 <template>
-    <v-app>
-        <container id="container">
-            <div id="app_capture">
-                <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
-            </div>
-            <div id="rightSideNote">
-                <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
-                <br>
-                <span id="smallHeaderNote" class="nunito">Sit back and relax. Let us worry about the delivery</span>
-
-                <v-card class="first_card" flat v-for="note in notes">
-                    <span class="title">{{note.title}}</span>
+    <v-app id="container">
+            <div>
+                <div id="app_capture">
+                    <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
+                </div>
+                <div id="rightSideNote">
+                    <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
                     <br>
-                    <p class="body">{{note.body}}</p>
-                </v-card>
+                    <span id="smallHeaderNote" class="nunito">Sit back and relax. Let us worry about the delivery</span>
+
+                    <v-card class="first_card" flat v-for="note in notes">
+                        <span class="title">{{note.title}}</span>
+                        <br>
+                        <p class="body">{{note.body}}</p>
+                    </v-card>
+                </div>
             </div>
-        </container>
 
     </v-app>
 </template>

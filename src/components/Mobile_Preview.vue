@@ -1,20 +1,18 @@
 <template>
-    <v-app>
-        <container id="container">
-            <div id="app_preview">
-                <div id="left_of_app">
-                    <span id="app_description">Delivery app for the best delivery platform in <br> Addis</span>
-                    <v-btn id="downloadButton" text class="ubuntu">Download
-                        <v-icon>
-                            file_download
-                        </v-icon>
-                    </v-btn>
-                </div>
-                <div id="app_capture">
-                    <v-img :src="require('../../../tolodelivery_landingPage/src/assets/mobile_preview.jpg')"></v-img>
-                </div>
+    <v-app id="container">
+        <div id="app_preview">
+            <div id="left_of_app">
+                <span id="app_description">Delivery app for the best delivery platform in <br> Addis</span>
+                <v-btn id="downloadButton" text class="ubuntu">Download
+                    <v-icon>
+                        file_download
+                    </v-icon>
+                </v-btn>
             </div>
-        </container>
+            <div id="app_capture">
+                <v-img :src="require('../../../tolodelivery_landingPage/src/assets/mobile_preview.jpg')"></v-img>
+            </div>
+        </div>
     </v-app>
 
 </template>
@@ -32,6 +30,7 @@
 
     #container {
         background-color: #F2EFE8;
+        align-items: stretch;
     }
 
     #left_of_app {
@@ -40,6 +39,9 @@
         width: 25%;
     }
 
+    /* #vapp{
+         display: flex;
+     }*/
     #app_description {
         font-size: 40px;
         /*font-family: 'Poppins', sans-serif;*/
@@ -60,6 +62,7 @@
         background-color: #00806C;
         color: white;
     }
+
     .ubuntu {
         font-family: 'Ubuntu', sans-serif;
     }

@@ -1,12 +1,12 @@
 <template>
-    <v-app>
-        <container id="container">
-            <v-card class="first_card" flat v-for="note in notes">
+    <v-app id="container">
+        <div>
+            <v-card class="first_card" v-for="note in notes" hover="true">
                 <p class="title vollkorn">{{note.title}}</p>
                 <br>
                 <p class="body josefinsans">{{note.body}}</p>
             </v-card>
-        </container>
+        </div>
     </v-app>
 
 </template>

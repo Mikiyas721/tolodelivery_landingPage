@@ -1,6 +1,6 @@
 <template>
-    <v-app>
-        <container id="bottom">
+    <v-app id="bottom">
+        <div>
             <div id="navigate">
                 <p class="openSans">Navigate</p>
                 <p v-for="navigate in navs" id="link" class="nunito">
@@ -16,7 +16,7 @@
                 </p>
 
             </div>
-        </container>
+        </div>
     </v-app>
 
 </template>
@@ -59,11 +59,11 @@
     #bottom {
         background-color: #303030;
         height: 400px;
-        float: bottom;
+        float: top;
     }
 
     #contact {
-        /*background-color: blue;*/
+
         width: auto;
         margin: 50px;
         float: left;
@@ -71,7 +71,6 @@
     }
 
     #navigate {
-        /*background-color: blue;*/
         width: auto;
         margin: 50px;
         float: left;

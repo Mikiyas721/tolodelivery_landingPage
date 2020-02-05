@@ -1,16 +1,11 @@
 <template>
-    <v-app>
-        <container id="container">
-
+    <v-app id="container">
             <div id="title">
                 <h1 class="ml-12 mt-10" id="downloadPrompt">Download it now.</h1>
                 <v-btn id="button" text>
                     <v-icon class="mr-2">store</v-icon>
                     App Store</v-btn>
             </div>
-            <!--v-for work on slide?-->
-        </container>
-
     </v-app>
 </template>
 
@@ -29,7 +24,7 @@
 
     #container {
         background-color: #F2EFE8;
-       /* margin-bottom: 50px;*/
+        height: 200px;
     }
 
     #button {
@@ -38,8 +33,6 @@
         margin: 20px 0 100px 13%;
     }
     #downloadPrompt{
-        /*font-family: 'Poppins', sans-serif;*/
-        /*font-family: 'Nunito', sans-serif;*/
-        font-family: 'Open Sans', sans-serif;
+           font-family: 'Open Sans', sans-serif;
     }
 </style>
