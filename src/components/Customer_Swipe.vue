@@ -2,8 +2,8 @@
     <v-app>
         <container id="container">
             <div id="title">
-                <h1 class="ml-12">Take a closer look</h1>
-                <h3>See how easily you can use our customer application</h3>
+                <h1 class="ml-12 merriweather">Take a closer look</h1>
+                <h3 class="josefinsans">See how easily you can use our customer application</h3>
             </div>
             <v-carousel cycle="true" interval="2000" progress="true" show-arrows-on-hover="true" vertical="true">
                 <v-carousel-item
@@ -51,13 +51,11 @@
         margin: 0 10px 0 10px;
     }
 
-    .image {
-        height: 500px;
-        margin-left: 50%;
+    .merriweather {
+        font-family: 'Merriweather', serif;
+    }
+    .josefinsans{
+        font-family: 'Josefin Sans', sans-serif;
     }
 
-    .image_Slide {
-        margin: 20px 0px 0px 13%;
-
-    }
 </style>

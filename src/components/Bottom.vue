@@ -2,15 +2,15 @@
     <v-app>
         <container id="bottom">
             <div id="navigate">
-                <p>Navigate</p>
-                <p v-for="navigate in navs" id="link">
+                <p class="openSans">Navigate</p>
+                <p v-for="navigate in navs" id="link" class="nunito">
                     {{navigate.label}}
                 </p>
 
             </div>
             <div id="contact">
-                <p>Contact</p>
-                <p v-for="contact in contacts">
+                <p class="openSans">Contact</p>
+                <p v-for="contact in contacts" class="nunito">
                     <v-icon class="mr-3 white--text">{{contact.icon}}</v-icon>
                     {{contact.data}}
                 </p>
@@ -77,7 +77,16 @@
         float: left;
         color: white;
     }
-    #link{
+
+    .openSans {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;;
+    }
+
+    #link {
         color: grey;
         font-size: 14px;
     }

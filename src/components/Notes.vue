@@ -2,9 +2,9 @@
     <v-app>
         <container id="container">
             <v-card class="first_card" flat v-for="note in notes">
-                <span class="title">{{note.title}}</span>
+                <p class="title vollkorn">{{note.title}}</p>
                 <br>
-                <p class="body">{{note.body}}</p>
+                <p class="body josefinsans">{{note.body}}</p>
             </v-card>
         </container>
     </v-app>
@@ -34,13 +34,13 @@
                     title: 'Order',
                     body: "You can order a delivery or a transport via our Mobile App. We also have a telegram bot if you're a telegram user."
                 },
-              /*  {
-                    title: 'Call Service',
-                    body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
-                },{
-                    title: 'Call Service',
-                    body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
-                },*/
+                /*  {
+                      title: 'Call Service',
+                      body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
+                  },{
+                      title: 'Call Service',
+                      body: 'You can dial our call center whenever you have trouble with the application. We will also answer any other questions you have. Just dial ????'
+                  },*/
 
             ]
 
@@ -63,10 +63,10 @@
     }
 
     .title {
+        font-family: 'Vollkorn', serif;; /*font family isnt working for title*/
         font-weight: bold;
         font-size: 18px;
-        margin: 5px 5px 5px 10px;
-
+        margin: 5px 5px 0 10px;
     }
 
     .body {
@@ -74,5 +74,9 @@
         font-size: 15px;
         color: grey;
         margin: 5px 5px 5px 10px;
+    }
+
+    .josefinsans {
+        font-family: 'Josefin Sans', sans-serif;
     }
 </style>

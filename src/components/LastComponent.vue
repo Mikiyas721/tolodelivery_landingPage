@@ -5,9 +5,9 @@
                 <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
             </div>
             <div id="rightSideNote">
-                <span id="noteHeader">Introducing a fast transportation and delivery System.</span>
+                <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
                 <br>
-                <span id="smallHeaderNote">Sit back and relax. Let us worry about the delivery</span>
+                <span id="smallHeaderNote" class="nunito">Sit back and relax. Let us worry about the delivery</span>
 
                 <v-card class="first_card" flat v-for="note in notes">
                     <span class="title">{{note.title}}</span>
@@ -79,7 +79,6 @@
         font-weight: bold;
         font-size: 18px;
         margin: 5px 5px 5px 10px;
-
     }
 
     .body {
@@ -87,5 +86,18 @@
         font-size: 15px;
         color: grey;
         margin: 5px 5px 5px 10px;
+        font-family: 'Alegreya', serif;
+    }
+
+    .openSans {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;;
+    }
+
+    .poppins {
+        font-family: 'Poppins', sans-serif;
     }
 </style>

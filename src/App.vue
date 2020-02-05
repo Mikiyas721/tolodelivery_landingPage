@@ -7,15 +7,15 @@
                     <img :src="require('../assets/logo.jpg')" id="logo" class="mr-2">
                 </v-avatar>
 
-                <span class="text_tolo">Tolo</span>
+                <span class="text_tolo arvo">Tolo</span>
                 <span class="headset
-                     text_delivery">Delivery</span>
+                     text_delivery arvo">Delivery</span>
 
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
 
-            <v-btn text class="download_button">
+            <v-btn text class="download_button ubuntu">
                 Download
                 <v-icon>
                     file_download
@@ -93,13 +93,17 @@
         margin-bottom: 8px;
     }
 
-    #app_bar {
-        background-color: #F2EFE8;
-    }
-
     .download_button {
         background-color: #00806C;
         color: white;
         margin-right: 5%;
+    }
+
+    .arvo {
+        font-family: 'Arvo', serif;
+    }
+
+    .ubuntu {
+        font-family: 'Ubuntu', sans-serif;
     }
 </style>

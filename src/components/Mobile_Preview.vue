@@ -3,8 +3,8 @@
         <container id="container">
             <div id="app_preview">
                 <div id="left_of_app">
-                    <span id="app_description">Delivery app for the best delivery platform in <br> Ethiopia</span>
-                    <v-btn id="downloadButton" text>Download
+                    <span id="app_description">Delivery app for the best delivery platform in <br> Addis</span>
+                    <v-btn id="downloadButton" text class="ubuntu">Download
                         <v-icon>
                             file_download
                         </v-icon>
@@ -42,7 +42,9 @@
 
     #app_description {
         font-size: 40px;
-        font-family: "Agency FB";
+        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Nunito', sans-serif;
+        /*font-family: 'Open Sans', sans-serif;*/
         font-weight: bold;
     }
 
@@ -58,26 +60,9 @@
         background-color: #00806C;
         color: white;
     }
-
-    #description_text {
-        margin: 60px 10px 50px 35%;
-        background-color: whitesmoke;
-        width: 34%;
-        padding: 5px;
-        border: wheat 1px solid;
-        border-radius: 5px;
-        box-shadow: 1px 2px 1px darkgray;
+    .ubuntu {
+        font-family: 'Ubuntu', sans-serif;
     }
 
-    #description_upper {
-        color: goldenrod;
-        font-size: 20px;
-        margin-left: 25%;
-    }
-
-    #description_lower {
-        font-size: 15px;
-        color: grey;
-    }
 
 </style>
