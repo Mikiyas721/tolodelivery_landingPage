@@ -3,7 +3,7 @@
         <div id="app_preview">
             <div id="left_of_app">
                 <span id="app_description">Delivery app for the best delivery platform in <br> Addis</span>
-                <v-btn id="downloadButton" text class="ubuntu">Download
+                <v-btn id="downloadButton" text class="ubuntu" href="https://www.google.com/" target="_blank">Download
                     <v-icon>
                         file_download
                     </v-icon>

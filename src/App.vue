@@ -15,7 +15,7 @@
 
             <v-spacer></v-spacer>
 
-            <v-btn text class="download_button ubuntu">
+            <v-btn text class="download_button ubuntu" href="https://www.google.com/" target="_blank">
                 Download
                 <v-icon>
                     file_download
@@ -29,7 +29,6 @@
             <Notes></Notes>
             <Customer_Swipe></Customer_Swipe>
             <Last></Last>
-            <Play></Play>
 
             <div id="bottom">
                 <div id="navigate">
@@ -57,7 +56,6 @@
     import Notes from './components/Notes';
     import Customer_Swipe from './components/Customer_Swipe';
     import Last from './components/ToloDetails';
-    import Play from './components/PlayStore';
 
     //TODO Add a component about the telegram bot
 
@@ -68,7 +66,6 @@
             Notes,
             Customer_Swipe,
             Last,
-            Play,
         },
         data: () => ({
             notes: [

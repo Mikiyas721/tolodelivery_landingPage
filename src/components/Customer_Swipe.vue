@@ -4,12 +4,17 @@
             <h1 class="ml-12 merriweather">Take a closer look</h1>
             <h3 class="josefinsans">See how easily you can use our customer application</h3>
         </div>
-        <v-carousel cycle="true" interval="2000" progress="true" show-arrows-on-hover="true" vertical="true">
+        <v-carousel cycle="true"
+                    interval="3000"
+                    show-arrows-on-hover="true"
+                    hide-delimiter-background="true">
             <v-carousel-item
                     v-for="(item,i) in image_url" :src="item.path" :key="i"
                     style="width: 240px; height: auto; margin-left: 42%">
             </v-carousel-item>
         </v-carousel>
+        <div style="height: 100px">
+        </div>
     </v-app>
 </template>
 <script>
@@ -39,16 +44,17 @@
 
 <style scoped>
     #title {
-        margin-left: 35%;
+        margin: 3% 0 3% 35%;
     }
 
     #container {
         background-color: #F2EFE8;
-        /* margin: 0 10px 0 10px;*/
     }
 
     .merriweather {
         font-family: 'Merriweather', serif;
+        word-spacing: 6px;
+        margin: 0 0 10px 0;
     }
 
     .josefinsans {

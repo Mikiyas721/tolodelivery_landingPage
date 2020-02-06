@@ -1,7 +1,7 @@
 <template>
     <v-app id="container">
         <div>
-            <v-card class="first_card" v-for="note in notes" hover="true">
+            <v-card class="first_card" flat v-for="note in notes" hover="true" :key="note.title">
                 <p class="title vollkorn">{{note.title}}</p>
                 <br>
                 <p class="body josefinsans">{{note.body}}</p>
@@ -60,6 +60,7 @@
     #container {
         background-color: white;
         margin: 0;
+       /* height: 400px;*/
     }
 
     .title {
