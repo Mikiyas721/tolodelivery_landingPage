@@ -39,14 +39,9 @@
         width: 25%;
     }
 
-    /* #vapp{
-         display: flex;
-     }*/
     #app_description {
         font-size: 40px;
-        /*font-family: 'Poppins', sans-serif;*/
         font-family: 'Nunito', sans-serif;
-        /*font-family: 'Open Sans', sans-serif;*/
         font-weight: bold;
     }
 

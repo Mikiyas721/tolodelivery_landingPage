@@ -1,21 +1,21 @@
 <template>
     <v-app id="container">
-            <div>
-                <div id="app_capture">
-                    <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
-                </div>
-                <div id="rightSideNote">
-                    <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
-                    <br>
-                    <span id="smallHeaderNote" class="nunito">Sit back and relax. Let us worry about the delivery</span>
-
-                    <v-card class="first_card" flat v-for="note in notes">
-                        <span class="title">{{note.title}}</span>
-                        <br>
-                        <p class="body">{{note.body}}</p>
-                    </v-card>
-                </div>
+        <div>
+            <div id="app_capture">
+                <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
             </div>
+            <div id="rightSideNote">
+                <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
+                <br>
+                <span id="smallHeaderNote" class="nunito">Sit back and relax. Let us worry about the delivery</span>
+
+                <v-card class="first_card" flat v-for="(note,i) in notes" :key="i">
+                    <span class="title">{{note.title}}</span>
+                    <br>
+                    <p class="body">{{note.body}}</p>
+                </v-card>
+            </div>
+        </div>
 
     </v-app>
 </template>
@@ -60,7 +60,7 @@
     }
 
     #container {
-        background-color: white;
+        background-color: #F2EFE8;
     }
 
     #smallHeaderNote {
@@ -73,6 +73,7 @@
         height: auto;
         margin: 40px 20px 20px 0;
         border-radius: 5px;
+        background-color: #F2EFE8;
     }
 
     .title {

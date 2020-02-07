@@ -28,7 +28,9 @@
             <Mobile_Preview></Mobile_Preview>
             <Notes></Notes>
             <Customer_Swipe></Customer_Swipe>
+            <Bot></Bot>
             <Last></Last>
+
 
             <div id="bottom">
                 <div id="navigate">
@@ -56,6 +58,7 @@
     import Notes from './components/Notes';
     import Customer_Swipe from './components/Customer_Swipe';
     import Last from './components/ToloDetails';
+    import Bot from './components/TelegramBot';
 
     //TODO Add a component about the telegram bot
 
@@ -66,6 +69,7 @@
             Notes,
             Customer_Swipe,
             Last,
+            Bot
         },
         data: () => ({
             notes: [
