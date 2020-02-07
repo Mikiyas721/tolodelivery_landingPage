@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app style="background-color: white">
         <h1 id="main_title">Also checkout our telegram Bot</h1>
         <div>
             <div id="leftSide">
