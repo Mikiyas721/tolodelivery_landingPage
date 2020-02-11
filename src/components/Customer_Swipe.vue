@@ -9,6 +9,8 @@
                 width="280"
                 height="495"
                 controlsVisible="true"
+                :inverse-scaling="500"
+                :space="250"
         >
             <Slide v-for="(url,i) in image_url" :index="i" :key="i">
                 <v-img :src="url.path" id="slide_img"></v-img>
@@ -17,7 +19,6 @@
     </v-app>
 </template>
 <script>
-    /*import {Carousel, Slide} from 'vue-carousel';*/
     import {Carousel3d, Slide} from 'vue-carousel-3d'
 
     export default {
