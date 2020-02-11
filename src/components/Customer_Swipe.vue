@@ -4,29 +4,27 @@
             <h1 class="ml-12 merriweather">Take a closer look</h1>
             <h3 class="josefinsans">See how easily you can use our customer application</h3>
         </div>
-        <Carousel
+        <Carousel3d
                 autoplay="true"
-                navigationEnabled="true"
-                navigationClickTargetSize="10"
-                perPage="3"
-                paginationColor="#454F63"
-                scrollPerPage="false"
-                id="caurosel"
+                width="280"
+                height="495"
+                controlsVisible="true"
         >
             <Slide v-for="(url,i) in image_url" :index="i" :key="i">
                 <v-img :src="url.path" id="slide_img"></v-img>
             </Slide>
-        </Carousel>
+        </Carousel3d>
     </v-app>
 </template>
 <script>
-    import {Carousel, Slide} from 'vue-carousel';
+    /*import {Carousel, Slide} from 'vue-carousel';*/
+    import {Carousel3d, Slide} from 'vue-carousel-3d'
 
     export default {
         name: "Swiper",
         components: {
-            Carousel,
-            Slide
+            Carousel3d,
+            Slide,
         },
         data: () => ({
             image_url: [
@@ -51,7 +49,7 @@
 
 <style scoped>
     #title {
-        margin: 3% 0 3% 35%;
+        margin: 3% 0 2% 35%;
     }
 
     #slide_img {
@@ -71,7 +69,8 @@
     .josefinsans {
         font-family: 'Josefin Sans', sans-serif;
     }
-    #caurosel{
+
+    #caurosel {
         margin-left: 10%;
     }
 
