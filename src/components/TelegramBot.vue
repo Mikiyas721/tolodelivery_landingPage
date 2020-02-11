@@ -12,7 +12,7 @@
 
                 <div style="margin:10px 0 0 45%">
                     <h3 style="font-family: 'Josefin Sans', sans-serif;">All you need is a telegram account</h3>
-                    <p>Click <a href="https://www.google.com/">here</a> to see how you can use the
+                    <p id="redirect">Click <a href="https://www.google.com/">here</a> to see how you can use the
                         bot</p>
                 </div>
 
@@ -68,13 +68,14 @@
     }
 
     #card_title {
+        font-family: 'Vollkorn', serif;
 
     }
 
     #card_body {
         margin-top: 6px;
         color: grey;
-
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     #rightSide {
@@ -87,6 +88,11 @@
     #detail_cards {
         padding: 5px;
         margin: 10px 0 0 25%;
+    }
+    #redirect{
+        font-family: 'Sacramento', cursive;
+        font-size: 16px;
+
     }
 
 </style>

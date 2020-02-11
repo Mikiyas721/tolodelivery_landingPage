@@ -31,7 +31,7 @@
                 },
                 {
                     title: 'Goal',
-                    body: 'To be the first choice of delivery all over Addis Ababa.'
+                    body: 'To be the first choice of delivery and transportation all over Addis Ababa.'
                 },
             ]
 

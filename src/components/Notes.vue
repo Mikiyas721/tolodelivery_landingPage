@@ -2,8 +2,7 @@
     <v-app id="container">
         <div style="margin-top: 7%">
             <v-card class="first_card" flat v-for="note in notes" hover="true" :key="note.title">
-                <p class="title vollkorn">{{note.title}}</p>
-                <br>
+                <p class="title">{{note.title}}</p>
                 <p class="body josefinsans">{{note.body}}</p>
             </v-card>
         </div>
@@ -72,7 +71,7 @@
     }
 
     .title {
-        font-family: 'Vollkorn', serif;; /*font family isnt working for title*/
+        font-family: 'Vollkorn', serif; /*TODO replace font, doesn't work*/
         font-weight: bold;
         font-size: 18px;
         margin: 5px 5px 0 10px;
