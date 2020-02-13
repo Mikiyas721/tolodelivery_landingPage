@@ -7,7 +7,7 @@
         <Carousel3d
                 autoplay="true"
                 width="280"
-                height="495"
+                height="575"
                 controlsVisible="true"
                 :inverse-scaling="500"
                 :space="250"
@@ -29,20 +29,15 @@
         },
         data: () => ({
             image_url: [
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg'),},
-                {path: require('../assets/biker_swiper/1.jpg')},
-                {path: require('../assets/biker_swiper/1.jpg')},
-                {path: require('../assets/biker_swiper/1.jpg')},
-                {path: require('../assets/biker_swiper/1.jpg')},
-                {path: require('../assets/biker_swiper/1.jpg')}
+                {path: require('../assets/app_images/Screenshot_1581578874.png'),},
+                {path: require('../assets/app_images/Screenshot_1581578879.png'),},
+                {path: require('../assets/app_images/Screenshot_1581578882.png'),},
+                {path: require('../assets/app_images/Screenshot_1581578889.png'),},
+                {path: require('../assets/app_images/Screenshot_1581579001.png'),},
+                {path: require('../assets/app_images/Screenshot_1581579005.png'),},
+                {path: require('../assets/app_images/Screenshot_1581579015.png'),},
+                {path: require('../assets/app_images/Screenshot_1581579039.png'),},
+
             ]
         })
     }
