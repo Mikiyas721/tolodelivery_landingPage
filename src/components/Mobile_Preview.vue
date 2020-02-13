@@ -10,7 +10,7 @@
                 </v-btn>
             </div>
             <div id="app_capture">
-                <v-img :src="require('../../../tolodelivery_landingPage/src/assets/mobile_preview.jpg')"></v-img>
+                <v-img :src="require('../../../tolodelivery_landingPage/src/assets/app_images/Screenshot_1581579039.png')"></v-img>
             </div>
         </div>
     </v-app>

@@ -2,7 +2,7 @@
     <v-app id="container">
         <div>
             <div id="app_capture">
-                <v-img :src="require('../assets/mobile_preview.jpg')"></v-img>
+                <v-img :src="require('../assets/app_images/Screenshot_1581578879.pnggit ')"></v-img>
             </div>
             <div id="rightSideNote">
                 <span id="noteHeader" class="openSans">Introducing a fast transportation and delivery System.</span>
