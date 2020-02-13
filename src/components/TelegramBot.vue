@@ -12,8 +12,7 @@
 
                 <div style="margin:10px 0 0 45%">
                     <h3 style="font-family: 'Josefin Sans', sans-serif;">All you need is a telegram account</h3>
-                    <p id="redirect">Click <a href="https://www.google.com/">here</a> to see how you can use the
-                        bot</p>
+                    <p id="redirect">The bot has a gif showing how to use it</p>
                 </div>
 
 
@@ -91,7 +90,7 @@
     }
     #redirect{
         font-family: 'Sacramento', cursive;
-        font-size: 16px;
+        font-size: 25px;
 
     }
 
